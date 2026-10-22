@@ -24,6 +24,8 @@ Requires **Java 25**.
 
 The jars end up in `fabric/build/libs/` and `neoforge/build/libs/` (`towers_of_the_wild-<loader>-26.3-<version>.jar`). The Fabric jar needs Fabric API.
 
+The `Build` GitHub Action (`.github/workflows/build.yml`) runs the same build on every push to `main` and every pull request, and uploads both jars as workflow artifacts.
+
 Run a dev client or server with `./gradlew :fabric:runClient`, `:fabric:runServer`, `:neoforge:runClient` or `:neoforge:runServer`.
 
 ## Towers
