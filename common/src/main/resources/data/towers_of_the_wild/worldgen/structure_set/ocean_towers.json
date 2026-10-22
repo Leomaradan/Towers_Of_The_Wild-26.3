@@ -1,0 +1,17 @@
+{
+  "placement": {
+    "type": "towers_of_the_wild:configurable_spread",
+    "rarity": "ocean",
+    "salt": 1689782
+  },
+  "structures": [
+    {
+      "structure": "towers_of_the_wild:ocean_tower",
+      "weight": 1
+    },
+    {
+      "structure": "towers_of_the_wild:ocean_warm_tower",
+      "weight": 1
+    }
+  ]
+}

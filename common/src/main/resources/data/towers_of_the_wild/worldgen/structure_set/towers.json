@@ -1,0 +1,21 @@
+{
+  "placement": {
+    "type": "towers_of_the_wild:configurable_spread",
+    "rarity": "regular",
+    "salt": 1689777
+  },
+  "structures": [
+    {
+      "structure": "towers_of_the_wild:tower",
+      "weight": 1
+    },
+    {
+      "structure": "towers_of_the_wild:jungle_tower",
+      "weight": 1
+    },
+    {
+      "structure": "towers_of_the_wild:ice_tower",
+      "weight": 1
+    }
+  ]
+}

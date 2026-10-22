@@ -1,0 +1,26 @@
+{
+  "values": [
+    "minecraft:desert",
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp",
+    "minecraft:mushroom_fields",
+    "#minecraft:is_badlands",
+    "minecraft:stony_peaks",
+    {
+      "id": "#c:is_desert",
+      "required": false
+    },
+    {
+      "id": "#c:is_swamp",
+      "required": false
+    },
+    {
+      "id": "#c:is_badlands",
+      "required": false
+    },
+    {
+      "id": "#c:is_mushroom",
+      "required": false
+    }
+  ]
+}
