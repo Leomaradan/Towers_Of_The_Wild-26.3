@@ -1,10 +1,17 @@
 name: Build
 
+# Builds the mod and publishes one artifact per mod loader,
+# each containing only the mod jar (no sources or javadoc jars).
+
 on:
   push:
     branches: [ main ]
   pull_request:
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -22,13 +29,17 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
+      - name: Read mod properties
+        id: mod
+        run: echo "mod_id=$(sed -n 's/^mod_id=//p' gradle.properties)" >> "$GITHUB_OUTPUT"
+
       - name: Build
         run: ./gradlew build
 
       - name: Upload Fabric jar
         uses: actions/upload-artifact@v4
         with:
-          name: towers_of_the_wild-fabric
+          name: ${{ steps.mod.outputs.mod_id }}-fabric
           path: |
             fabric/build/libs/*.jar
             !fabric/build/libs/*-sources.jar
@@ -38,7 +49,7 @@ jobs:
       - name: Upload NeoForge jar
         uses: actions/upload-artifact@v4
         with:
-          name: towers_of_the_wild-neoforge
+          name: ${{ steps.mod.outputs.mod_id }}-neoforge
           path: |
             neoforge/build/libs/*.jar
             !neoforge/build/libs/*-sources.jar
