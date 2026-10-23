@@ -1,5 +1,16 @@
 Changelog:
 
+3.0.0 (Minecraft 26.3, Fabric and NeoForge)
+
+- Ported from Minecraft 1.16.3 / Forge to Minecraft 26.3, with one jar for Fabric and one for NeoForge.
+- Towers are now data-driven: structures, structure sets, template pools and biome tags live in data/towers_of_the_wild/ and can be overridden with a data pack.
+- The config is now config/towers_of_the_wild.json (same options as before). Changes apply on the next world load.
+- Biomes are now chosen with biome tags (data/towers_of_the_wild/tags/worldgen/biome/has_structure/); the config biome and mod blacklists still apply on top.
+- Towers can be found with /locate structure towers_of_the_wild:<tower>.
+- Fixed: derelict towers in grassy biomes used the regular derelict bottom piece instead of their own.
+
+2.0.x
+
 - Rebalanced the rarity of the towers.
 - Towers now do not spawn in the Nether or the End by default (no need to blacklist these dimensions).
 - Top half of derelict towers are now spawning at a height level matching the terrain.

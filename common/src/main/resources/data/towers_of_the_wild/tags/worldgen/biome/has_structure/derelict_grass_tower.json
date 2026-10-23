@@ -1,0 +1,28 @@
+{
+  "values": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "#minecraft:is_forest",
+    "#minecraft:is_taiga",
+    "#minecraft:is_hill",
+    "#minecraft:is_savanna",
+    "minecraft:meadow",
+    "minecraft:cherry_grove",
+    {
+      "id": "#c:is_plains",
+      "required": false
+    },
+    {
+      "id": "#c:is_forest",
+      "required": false
+    },
+    {
+      "id": "#c:is_taiga",
+      "required": false
+    },
+    {
+      "id": "#c:is_savanna",
+      "required": false
+    }
+  ]
+}

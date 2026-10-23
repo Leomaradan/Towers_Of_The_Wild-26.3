@@ -1,0 +1,50 @@
+{
+  "values": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "#minecraft:is_forest",
+    "#minecraft:is_taiga",
+    "#minecraft:is_hill",
+    "#minecraft:is_savanna",
+    "minecraft:meadow",
+    "minecraft:cherry_grove",
+    "minecraft:desert",
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp",
+    "minecraft:mushroom_fields",
+    "#minecraft:is_badlands",
+    "minecraft:stony_peaks",
+    {
+      "id": "#c:is_plains",
+      "required": false
+    },
+    {
+      "id": "#c:is_forest",
+      "required": false
+    },
+    {
+      "id": "#c:is_taiga",
+      "required": false
+    },
+    {
+      "id": "#c:is_savanna",
+      "required": false
+    },
+    {
+      "id": "#c:is_desert",
+      "required": false
+    },
+    {
+      "id": "#c:is_swamp",
+      "required": false
+    },
+    {
+      "id": "#c:is_badlands",
+      "required": false
+    },
+    {
+      "id": "#c:is_mushroom",
+      "required": false
+    }
+  ]
+}

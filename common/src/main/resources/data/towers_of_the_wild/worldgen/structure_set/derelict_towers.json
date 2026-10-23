@@ -1,0 +1,21 @@
+{
+  "placement": {
+    "type": "towers_of_the_wild:configurable_spread",
+    "rarity": "derelict",
+    "salt": 1689780,
+    "exclusion_zone": {
+      "other_set": "towers_of_the_wild:towers",
+      "chunk_count": 3
+    }
+  },
+  "structures": [
+    {
+      "structure": "towers_of_the_wild:derelict_tower",
+      "weight": 1
+    },
+    {
+      "structure": "towers_of_the_wild:derelict_grass_tower",
+      "weight": 1
+    }
+  ]
+}
